@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Nexa', sans-serif;
     background: #61D277;
-    background-image: url(21587173_10154917004240060_3286845354865915933_o.jpg);
+    background-image: url(/images/21587173_10154917004240060_3286845354865915933_o.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@ body {
 header {
     background-color: #fff;
     width: 108%;
-    position: fixed;
+    
     padding: 0.5em;
 }
 
