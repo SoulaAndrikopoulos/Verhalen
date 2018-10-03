@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Nexa', sans-serif;
     background: #61D277;
-    background-image: url(/images/achtergrond.jpg);
+    background-image: url(../images/achtergrond.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
