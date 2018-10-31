@@ -1,94 +1,210 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body*/
+
 body {
     margin: 0;
     font-family: 'Nexa', sans-serif;
-    background: #61D277;
-    background-image: url(../images/achtergrond.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
+
+main {
+    background-color: #F3E5D7;
+}
+
+/* header */
 
 header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
     background-color: #fff;
-    width: 108%;
-    
-    padding: 0.5em;
-}
-
-img {
-    float: left;
-    margin: 1em;
-    width: 3em;
-}
-
-h1 {
-    color: #61D277;
-}
-
-h2 {
-    color: #61D277;
-}
-
-h3 {
-    color: #2A3280;
-}
-
-nav {
-    background: #fff;
-    margin: -1em -2em -1em;
-}
-
-ul {
+    padding: 0.5em 0.5em;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-start;
+}
+
+header img {
+    height: 3em;
+    margin-left: 10em;
+}
+
+nav ul {
     list-style: none;
+    margin-left: -2em;
 }
 
-li a {
-    color: #61D277;
-    padding: 2em;
+nav li {
+    display: inline-block;
+    margin: 0.2em 0.5em;
+}
+
+nav a {
+    font-weight: 900;
     text-decoration: none;
+    font-size: 1em;
+    padding: 0.25em;
+    color: #02D66C;
 }
 
-li a:hover {
+nav a:hover {
     color: #2A3280;
 }
 
-h2:hover {
-    color: #2A3280;
+
+/* hompagina */
+
+section.aanbevolen {
+    background-image: url(../images/achtergrond.jpg);
+    padding: 5em 10em;
 }
 
-button {
-    padding: 0.5em;
+section.aanbevolen h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+section.aanbevolen h2 {
+    background-color: #02D66C;
     color: #fff;
-    background: #EC486A;
-    font-size: 1em
+    padding-bottom: 1em;
 }
 
-button:hover {
+section.aanbevolen p {
+    margin: -1.5em 0 4em -3em 2em;
+    font-size: 1em;
+}
+
+section.aanbevolen article {
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    max-width: 20em;
+    border-radius: 20px;
+}
+
+section.aanbevolen article img {
+    max-width: 10em;
+    margin-bottom: -1em;
+}
+
+section.aanbevolen button {
+    margin: -5em 1em 1em 1.5em;
+}
+
+section.aanbevolen a {
+    cursor: pointer;
+    width: 5em;
+    margin-left: 1em;
+}
+
+/*zoekbalk*/
+
+section.zoekbalk {
+    background-color: #F3E5D7;
+    margin-top: -2.5em;
+}
+
+section.zoekbalk h1 {
+    margin-left: 3.5em;
+    margin-bottom: -0.2em;
+}
+
+section.zoekbalk input {
+    height: 3em;
+    max-width: 30em;
+    margin: 1em 0 3em 12em;
+    font-size: 1em;
+}
+
+/*Filteren en random verhalen*/
+
+section.filteren {
+    background-color: #F3E5D7;
+    margin: 1em 5em 5em 12em;
+}
+
+section.filteren h2 {
+    color: #2801A0;
+}
+
+section.filteren button:nth-last-of-type(1) {
+    background-color: #2801A0;
+    box-shadow: 0 2px #120147;
+    font-weight: 500;
+}
+
+section.filteren button:nth-last-of-type(2) {
+    background-color: #02D66C;
+    box-shadow: 0 2px #1C9262;
+    font-weight: 500;
+}
+
+/*Alle verhalen*/
+
+section.verhalen {
+    margin-top: -2.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+section.verhalen h1 {
+    width: 100%;
+    margin-left: 3.5em;
+}
+
+
+/*article*/
+
+section.verhalen {
+    background-color: #F3E5D7;
+}
+
+
+
+section.verhalen article {
+    text-align: center;
+    min-width: 10em;
+    margin-bottom: -0.3em;
+}
+
+section.verhalen article:hover {
+    opacity: 0.5;
+}
+
+section.verhalen article:nth-of-type(1) {
+    margin-left: 10em;
+}
+
+section.verhalen article:nth-of-type(4) {
+    margin-left: 10em;
+}
+
+section.verhalen article p {
+    color: #2A3280;
+    font-weight: 500;
+}
+
+section.verhalen article img {
+    width: 20em;
+}
+
+section.verhalen h3{
+    position: absolute;
+    background-color: #02D66C;
+    color: #fff;
+    font-size: 2em;
     padding: 0.5em;
-    color: #2A3280;
-    background: #EC486A;
+    width: 6em;
 }
 
-article {
-    background: #fff;
-    text-align: center;
-    margin: 4em 4em 1em;
-    padding: 1em;
-}
-
-section h3 {
-    text-align: center;
-    color: #2A3280;
-    margin: 2em;
-}
-
+/*footer */
 
 footer {
     background: #fff;
-    position: absolute;
-    width: 110%
+    width: 100%
 }
 
 footer p {
@@ -99,21 +215,158 @@ footer p:hover {
     color: #2A3280;
 }
 
+footer img {
+    width: 12em;
+    height: 12em;
+    margin-left: 10em;
+}
+
+/*fonts*/
+
+h1 {
+    font-size: 3em;
+    padding: 0.5em;
+    color: #02D66C;
+}
+
+h2 {
+    color: #02D66C;
+}
+
+h3 {
+    color: #2801A0
+}
+
+p {
+    color: #606060;
+}
+
+/*button*/
+
+button {
+    padding: 0.5em 0.75em;
+    color: #fff;
+    background: #FB3165;
+    font-size: 1em;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px #CA2B55;
+    font-weight: 500;
+}
+
+button:hover {
+    padding: 0.5em 0.75em;
+    background: #EC486A;
+    opacity: 0.8;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+/* inlog pagina */
+
+.login {
+    background-image: url(../images/achtergrond.jpg);
+    padding: 10em 0;
+
+}
+
+.login h1 {
+    margin-top: -1.5em;
+    margin-left: 3.5em;
+    font-size: 3em;
+}
+
+.login p:nth-of-type(1) {
+    margin: -3.5em 0 4em 12em;
+    font-size: 1em;
+}
+
+/*form*/
+
+fieldset {
+    display: inline-block;
+    border: none;
+    margin-top: 0;
+
+}
+
+legend {
+    font-size: 2em;
+    padding: 0 0 0.5em 0;
+}
+
+label {
+    color: #202020;
+    font-weight: 600;
+    margin-top: 5em;
+}
+
 form {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    margin: 12em 4em 1em;
-    padding: 1em;
-    color: #61D277;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 1em 4em 1em 12em;
+    padding: 2em;
+    color: #02D66C;
+    text-decoration: none;
+    max-width: 30em;
+    border-radius: 15px;
+}
+
+legend {
+    font-weight: 800;
 }
 
 input {
-  margin: 1em;
-}
+    width: 100%;
+    padding: 0.75em;
+    margin: 1em 2em 1em 0;
+    border: 0.5px solid #91A3B7;
+    border-radius: 8px;
+    height: 3em;
+    font-size: 1em;
+    color: #909090;
 
 }
 
-#aanbevolen {
-    background-color: rgba(255, 255, 255, 0.8);
+input:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    border-color: #2801A0;
 }
 
+input[type=submit] {
+    padding: 0.5em 0.75em;
+    color: #fff;
+    background: #FB3165;
+    font-size: 1em;
+    font-weight: 500;
+    border-radius: 40px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px #CA2B55;
+    max-width: 8em;
+    margin-left: 7.5em;
+}
+
+input[type=submit]:hover {
+    padding: 0.5em 0.75em;
+    background: #EC486A;
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/*verhaal*/
+
+section.verhaal img {
+    width: 50%;
+    margin: 10em 1em 0 10em;
+}
+
+/*mobile device */
+
+@media (max-width: 32em) {
+    header {
+        background-color: #fff;
+    }
+
+}

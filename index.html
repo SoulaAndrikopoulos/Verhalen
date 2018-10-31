@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>99 verhalen!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>99 verhalen voor onderweg</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -11,11 +12,12 @@
     <!-- Dit is de header met het logo en de titel van de website -->
     <header>
         <img src="images/Transavia_logo.svg.png" alt="">
-        <h1>99 Verhalen!</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Alle verhalen</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Genres</a></li>
                 <li><a href="login.html">Inloggen</a></li>
+                <li><a href="">Leeslijst</a></li>
             </ul>
         </nav>
     </header>
@@ -23,47 +25,78 @@
 
     <!-- Het aanbevolen verhaal-->
     <main>
-        <section>
-            <h3>Wat wil je lezen?</h3>
-            <article id="aanbevolen">
+        <section class="aanbevolen">
+            <h1>Verhalen voor onderweg</h1>
+            <p>Log in met jouw boekingsnummer om jouw favorieten verhalen op te slaan en te downloaden op een apparaat tijdens de reis.</p>
+             <a href="#alleverhalen">Zie overzicht van alle verhalen</a>
+            <article>
                 <h2>Aanbevolen verhalen</h2>
-                <h3>Verliefd (45)</h3>
-                <p>Rating: 4/5</p>
-                <button>Lees verhaal</button>
+                <img src="images/book3.jpg" alt="">
+                <p>Rating: 3/5</p>
+                <p>Categorie: Gevoel</p>
+                <button>Lees verhaal </button>
             </article>
-
-            <!-- De verhalen van de website-->
         </section>
-        <section>
-            <h3>Alle verhalen (99)</h3>
+
+        <!-- De zoekbalk op de pagina -->
+        <section class="zoekbalk">
+            <h1>Wat wil je lezen?</h1>
+            <input type="text" placeholder="Typ je zoekwoorden" name="zoeken">
+            <button type="submit">Zoek<i></i></button>
+        </section>
+
+        <!-- Filteren op een verhaal en een knop om random verhalen op te halen -->
+        <section class="filteren">
+           <h2>Filter de verhalen</h2>
+            <button>Filteren</button>
+            <button>Random verhalen</button>
+        </section>
+
+        <!-- De verhalen van de website-->
+        <section class="verhalen">
+            <h1 id="alleverhalen">Alle verhalen </h1>
             <article>
-                <h3>Kinderboek (45)</h3>
+             <h3>Telegraaf</h3>
+              <img src="images/verhaal1.jpg" alt="">
+               <!-- <h3>Kinderboek (45)</h3>
+                <img src="images/book1.jpg" alt="">
                 <p>Rating: 3/5</p>
-                <button>Voeg toe aan lijst</button>
+                <button>Voeg toe aan lijst</button> -->
             </article>
             <article>
-                <h3>Kinderboek (45)</h3>
+             <h3>Verliefd</h3>
+              <img src="images/verhaal2.jpg" alt="">
+               <!-- <h3>Kinderboek (45)</h3>
+                <img src="images/book2.jpg" alt="">
                 <p>Rating: 3/5</p>
-                <button>Voeg toe aan lijst</button>
+                <button>Voeg toe aan lijst</button> -->
             </article>
             <article>
-                <h3>Kinderboek (45)</h3>
+            <h3>Regenboog</h3>
+            <img src="images/verhaal3.jpg" alt="">
+             <!--   <h3>Kinderboek (45)</h3>
+                <img src="images/book3.jpg" alt="">
                 <p>Rating: 3/5</p>
-                <button>Voeg toe aan lijst</button>
+                <button>Voeg toe aan lijst</button> -->
             </article>
             <article>
-                <h3>Kinderboek (45)</h3>
-                <p>Rating: 3/5</p>
-                <button>Voeg toe aan lijst</button>
+               <h3>Blind</h3>
+                <img src="images/verhaal4.jpg" alt="">
+            </article>
+            <article>
+               <h3>Alzheimer</h3>
+                <img src="images/verhaal5.jpg" alt="">
+            </article>
+            <article>
+               <h3>Droom</h3>
+                <img src="images/verhaal6.jpg" alt="">
             </article>
         </section>
     </main>
 
     <!-- De footer-->
     <footer>
-        <p>Over Transavia</p>
-        <p>Partners</p>
-        <p>Contact</p>
+        <img src="images/logo_transavia.png" alt="">
     </footer>
 
 </body>
