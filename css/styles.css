@@ -76,6 +76,15 @@ section.aanbevolen p {
     margin: -1.5em 0 4em -3em 2em;
     font-size: 1em;
 }
+section.aanbevolen a:nth-of-type(1) {
+    color: #02D66C;#;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section.aanbevolen article p:nth-of-type(1) {
+    font-weight: 600;
+}
 
 section.aanbevolen article {
     background-color: rgba(255, 255, 255, 0.7);
@@ -90,13 +99,7 @@ section.aanbevolen article img {
 }
 
 section.aanbevolen button {
-    margin: -5em 1em 1em 1.5em;
-}
-
-section.aanbevolen a {
-    cursor: pointer;
-    width: 5em;
-    margin-left: 1em;
+    margin: -1em 1em 1em 0.5em;
 }
 
 /*zoekbalk*/
@@ -191,7 +194,7 @@ section.verhalen article img {
     width: 20em;
 }
 
-section.verhalen h3{
+section.verhalen h3 {
     position: absolute;
     background-color: #02D66C;
     color: #fff;
